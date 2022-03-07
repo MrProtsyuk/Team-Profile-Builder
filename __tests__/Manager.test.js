@@ -1,11 +1,19 @@
 const Manager = require('../lib/Manager.js');
 
-test('creates an manager object', () => {
-    const manager = new Manager('Mark');
+test('can set office number object', () => {
+    const test = "5";
+    const manager = new Manager("mark", 1, "mark@mark", test);
+    expect(manager.officeNumber).toBe(test)
+})
 
-    expect(manager.name).toBe('Mark');
-    expect(manager.id).toBe('1');
-    expect(manager.email).toBe('Mark');
-    expect(manager.role).toBe('Manager');
-    expect(manager.info).toBe('Office Number');
+test('can get office number object', () => {
+    const test = "5";
+    const manager = new Manager("mark", 1, "mark@mark", test);
+    expect(manager.getOfficeNumber()).toBe(test)
+})
+
+test('can get manager role', () => {
+    const test = "Manager";
+    const manager = new Manager("Mark", 1, "mark@mark", "5");
+    expect(manager.getRole()).toBe(test);
 })
