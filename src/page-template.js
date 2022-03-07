@@ -20,11 +20,13 @@ function generatePage(data) {
               <h2><b>${data.name}</b></h2>
               <h3>${data.role}</h3>
                 <div class="container-content">
-                    <p>${data.id}</p>
+                    <p>ID: ${data.id}</p>
                     <hr>
-                    <p>${data.email}</p>
+                    <p>Email: ${data.email}</p>
                     <hr>
-                    <p>${data.info}</p>
+                    <p>GitHub: ${data.gitHub}</p>
+                    <p>OfficeNumber: ${data.officeNumber}</p>
+                    <p>School: ${data.school}</p>
                 </div>
             </div>
           </div>
